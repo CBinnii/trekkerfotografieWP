@@ -1,0 +1,15 @@
+.pagination-item {
+    margin: 32px auto;
+
+    .pagination {
+        justify-content: center;
+
+        .page-item {
+            .page-link {
+                &.active {
+                    
+                }
+            }
+        }
+    }
+}

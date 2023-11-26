@@ -1,0 +1,86 @@
+.single {
+    margin-top: 200px;
+
+    @media screen and (max-width: 991px) {
+        margin-top: 130px;
+    }
+
+    .section {
+        padding: 32px 0;
+        overflow: hidden;
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "bookman-jf-pro", serif;
+            font-weight: 400;
+            font-style: normal;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+        h2 {
+            font-size: 28px;
+        }
+        h3 {
+            font-size: 24px;
+        }
+        h4 {
+            font-size: 20px;
+        }
+        h5 {
+            font-size: 16px;
+        }
+        h6 {
+            font-size: 12px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+        
+        .text-right {
+            text-align: right;
+        }
+        
+        .text-justify {
+            text-align: justify;
+        }
+
+        p {
+            font-size: 16px;
+
+            margin-bottom: 20px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        ul {
+            margin: 20px 0;
+            list-style: disc;
+            list-style-position: inside;
+
+            li {
+                font-size: 16px;
+                margin-bottom: 0;
+            }
+        }
+
+        ol {
+            margin: 20px 0;
+            list-style: decimal;
+            list-style-position: inside;
+
+            li {
+                font-size: 16px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

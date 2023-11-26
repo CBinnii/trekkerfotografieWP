@@ -1,0 +1,53 @@
+.button {
+    display: flex;
+    justify-content: center;
+
+    .button-default {
+        position: relative;
+        background-color: $primary;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 50px;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: -0.72px;
+        text-transform: uppercase;
+        margin-right: 15px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        &.white {
+            background-color: $white;
+        }
+
+        &.primary {
+            background-color: $primary;
+        }
+
+        &.black {
+            background-color: $black;
+        }
+
+        &.light {
+            background-color: $gray-4;
+        }
+
+        &.transparent {
+            background-color: transparent;
+        }
+
+        &.btn-default-rounded {
+            padding: 16px;
+        }
+        
+        @media screen and (max-width: 991px) {
+            font-size: 16px;
+        }
+    }
+}
