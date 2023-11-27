@@ -1,0 +1,568 @@
+[
+    {
+        "key": "group_6563f55a155fe",
+        "title": "Callback button links",
+        "fields": [
+            {
+                "key": "field_6563f55afaf70",
+                "label": "About Text",
+                "name": "about_text",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_6563f5915ec67",
+                "label": "Whatsapp",
+                "name": "whatsapp",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6563f5b92d71a",
+                "label": "Phone",
+                "name": "phone",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6563f5d22d71b",
+                "label": "Email",
+                "name": "email",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "callback-layer"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_6563ed6e1c61a",
+        "title": "Client link",
+        "fields": [
+            {
+                "key": "field_6563ed6ef6142",
+                "label": "Website",
+                "name": "website",
+                "aria-label": "",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "clients"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_6563f9e56d717",
+        "title": "Footer text",
+        "fields": [
+            {
+                "key": "field_6563f9e575e4a",
+                "label": "Footer Text",
+                "name": "footer_text",
+                "aria-label": "",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "footer"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_6563fcab2a1ce",
+        "title": "Images Post",
+        "fields": [
+            {
+                "key": "field_6563fcabda5ea",
+                "label": "Images",
+                "name": "images",
+                "aria-label": "",
+                "type": "gallery",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min": "",
+                "max": "",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "insert": "append",
+                "preview_size": "medium"
+            },
+            {
+                "key": "field_6563fcc7b135f",
+                "label": "Youtube URL Video",
+                "name": "youtube_url",
+                "aria-label": "",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_6563fdfffed81",
+                "label": "Youtube Thumb",
+                "name": "youtube_thumb",
+                "aria-label": "",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "preview_size": "medium"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_6563f73ce612c",
+        "title": "Social media links",
+        "fields": [
+            {
+                "key": "field_6563f73da458e",
+                "label": "Facebook",
+                "name": "facebook",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6563f74cdc75d",
+                "label": "LinkedIn",
+                "name": "linkedin",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6563f759dc75e",
+                "label": "Instagram",
+                "name": "instagram",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "social-media"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "group_6563f7e61fc5e",
+        "title": "Video Home Page",
+        "fields": [
+            {
+                "key": "field_6563f7e612441",
+                "label": "Video",
+                "name": "video",
+                "aria-label": "",
+                "type": "file",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_size": "",
+                "max_size": "",
+                "mime_types": "mp4"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ],
+            [
+                {
+                    "param": "page",
+                    "operator": "==",
+                    "value": "5"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    },
+    {
+        "key": "post_type_6563ec581eec0",
+        "title": "Client",
+        "menu_order": 0,
+        "active": true,
+        "post_type": "clients",
+        "advanced_configuration": true,
+        "import_source": "",
+        "import_date": "",
+        "labels": {
+            "name": "Client",
+            "singular_name": "Clients",
+            "menu_name": "Clients",
+            "all_items": "Todos os Clients",
+            "edit_item": "Editar Clients",
+            "view_item": "Ver Clients",
+            "view_items": "Ver Clients",
+            "add_new_item": "Adicionar novo Clients",
+            "add_new": "",
+            "new_item": "Novo Clients",
+            "parent_item_colon": "Clients ascendente:",
+            "search_items": "Pesquisar Clients",
+            "not_found": "Não foi possível encontrar clients",
+            "not_found_in_trash": "Não foi possível encontrar clients na lixeira",
+            "archives": "Arquivos de Clients",
+            "attributes": "Atributos de Clients",
+            "featured_image": "",
+            "set_featured_image": "",
+            "remove_featured_image": "",
+            "use_featured_image": "",
+            "insert_into_item": "Inserir no clients",
+            "uploaded_to_this_item": "Enviado para este clients",
+            "filter_items_list": "Filtrar lista de clients",
+            "filter_by_date": "Filtrar clients por data",
+            "items_list_navigation": "Navegação na lista de Clients",
+            "items_list": "Lista de Clients",
+            "item_published": "Clients publicado.",
+            "item_published_privately": "Clients publicado de forma privada.",
+            "item_reverted_to_draft": "Clients revertido para rascunho.",
+            "item_scheduled": "Clients agendado.",
+            "item_updated": "Clients atualizado.",
+            "item_link": "Link de Clients",
+            "item_link_description": "Um link para um clients."
+        },
+        "description": "",
+        "public": true,
+        "hierarchical": false,
+        "exclude_from_search": false,
+        "publicly_queryable": true,
+        "show_ui": true,
+        "show_in_menu": true,
+        "admin_menu_parent": "",
+        "show_in_admin_bar": true,
+        "show_in_nav_menus": true,
+        "show_in_rest": true,
+        "rest_base": "",
+        "rest_namespace": "wp\/v2",
+        "rest_controller_class": "WP_REST_Posts_Controller",
+        "menu_position": "",
+        "menu_icon": "dashicons-groups",
+        "rename_capabilities": false,
+        "singular_capability_name": "post",
+        "plural_capability_name": "posts",
+        "supports": [
+            "title",
+            "thumbnail"
+        ],
+        "taxonomies": [
+            "category"
+        ],
+        "has_archive": false,
+        "has_archive_slug": "",
+        "rewrite": {
+            "permalink_rewrite": "post_type_key",
+            "with_front": "1",
+            "feeds": "0",
+            "pages": "1"
+        },
+        "query_var": "post_type_key",
+        "query_var_name": "",
+        "can_export": true,
+        "delete_with_user": false,
+        "register_meta_box_cb": "",
+        "enter_title_here": ""
+    },
+    {
+        "key": "ui_options_page_6563f5100e13b",
+        "title": "Callback layer",
+        "active": true,
+        "menu_order": 0,
+        "page_title": "Callback layer",
+        "menu_slug": "callback-layer",
+        "parent_slug": "none",
+        "advanced_configuration": 1,
+        "icon_url": "dashicons-format-status",
+        "menu_title": "",
+        "position": "",
+        "redirect": 0,
+        "description": "",
+        "update_button": "Atualizar",
+        "updated_message": "Opções atualizadas",
+        "capability": "edit_posts",
+        "data_storage": "options",
+        "post_id": "",
+        "autoload": 0
+    },
+    {
+        "key": "ui_options_page_6563f9b3b9ccc",
+        "title": "Footer",
+        "active": true,
+        "menu_order": 0,
+        "page_title": "Footer",
+        "menu_slug": "footer",
+        "parent_slug": "none",
+        "advanced_configuration": 1,
+        "icon_url": "dashicons-editor-paragraph",
+        "menu_title": "",
+        "position": "",
+        "redirect": 0,
+        "description": "",
+        "update_button": "Atualizar",
+        "updated_message": "Opções atualizadas",
+        "capability": "edit_posts",
+        "data_storage": "options",
+        "post_id": "",
+        "autoload": 0
+    },
+    {
+        "key": "ui_options_page_6563f72aa4f81",
+        "title": "Social Media",
+        "active": true,
+        "menu_order": 0,
+        "page_title": "Social Media",
+        "menu_slug": "social-media",
+        "parent_slug": "none",
+        "advanced_configuration": 1,
+        "icon_url": "dashicons-share",
+        "menu_title": "",
+        "position": "",
+        "redirect": 0,
+        "description": "",
+        "update_button": "Atualizar",
+        "updated_message": "Opções atualizadas",
+        "capability": "edit_posts",
+        "data_storage": "options",
+        "post_id": "",
+        "autoload": 0
+    }
+]
