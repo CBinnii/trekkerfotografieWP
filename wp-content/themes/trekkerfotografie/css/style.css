@@ -19997,6 +19997,8 @@ input:active, input:focus, button:active, button:focus {
           opacity: 0; }
         .header nav li a:hover:after, .header nav li a.active:after {
           opacity: 1; }
+      .header nav li.current-menu-item a:after {
+        opacity: 1; }
 
 .tk-fade {
   opacity: 1;
@@ -20235,7 +20237,8 @@ input:active, input:focus, button:active, button:focus {
       bottom: 0;
       left: 0;
       z-index: 90;
-      padding: 15px 18px; }
+      padding: 15px 18px;
+      min-height: 74px; }
       .section .section-services .swiper-slide .content-text .text-title {
         color: #212121;
         font-size: 20px;
@@ -20266,7 +20269,8 @@ input:active, input:focus, button:active, button:focus {
 .contact {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  min-height: 750px; }
   .contact h1, .contact .h1, .contact h2, .contact .h2, .contact h3, .contact .h3, .contact h4, .contact .h4, .contact h5, .contact .h5, .contact h6, .contact .h6 {
     font-family: "bookman-jf-pro", serif;
     font-weight: 400;
@@ -20359,9 +20363,8 @@ input:active, input:focus, button:active, button:focus {
       text-align: justify; }
     .single .section p {
       font-size: 16px;
+      line-height: 1.2;
       margin-bottom: 20px; }
-      .single .section p:last-of-type {
-        margin-bottom: 0; }
     .single .section ul {
       margin: 20px 0;
       list-style: disc;
@@ -20377,13 +20380,15 @@ input:active, input:focus, button:active, button:focus {
         font-size: 16px;
         margin-bottom: 0; }
 
+.gallery .col-md-6 {
+  padding: 0 4px; }
 .gallery .image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 350px;
-  margin-bottom: 52px; }
+  margin-bottom: 8px; }
   .gallery .image.video {
     position: relative;
     display: flex;

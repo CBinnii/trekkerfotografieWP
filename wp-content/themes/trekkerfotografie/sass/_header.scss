@@ -124,6 +124,14 @@
 					}
 				}
 			}
+
+			&.current-menu-item {
+				a {
+					&:after {
+						opacity: 1;
+					}
+				}
+			}
 		}
 	}
 }

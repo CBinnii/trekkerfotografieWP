@@ -16,21 +16,21 @@
         <header id="header" class="header">
             <div class="inner">
                 <a href="<?php echo get_home_url(); ?>" class="logo alt-font header-transition">
-                    <img src="images/logo-header.png" alt="Logo">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-header.png" alt="Logo">
                 </a>
             </div>
 
             <nav class="alt-font header-transition">
-                <ul class="tk-fade">
-                    <li>
-                        <a href="<?php echo get_home_url(); ?>" target="_parent" class="active">Foto’s</a>
-                    </li>
-                    <li>
-                        <a href="archief" target="_parent">Archief</a>
-                    </li>
-                    <li>
-                        <a href="contact" target="_parent">Contact</a>
-                    </li>
-                </ul>
+                
+                <?php
+                    wp_nav_menu(array(
+                        'theme_location' => '',
+                        'menu_id' 		 => 'menu', 
+                        'container' 	 => false,
+                        'menu_class' 	 => '',
+                        'items_wrap' 	 => '<ul id="%1$s" class="tk-fade %2$s">%3$s</ul>',
+                        'depth' 		 => 2,
+                    ));
+                ?>
             </nav>
         </header>

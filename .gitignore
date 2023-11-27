@@ -7,8 +7,7 @@
 # you can delete this whole section/until Configuration.
 /wp-content/languages
 /wp-content/themes/index.php
-/wp-content/themes/webwow/.sass-cache
-/wp-content/themes/klantcontent/
+/wp-content/themes/trekkerfotografie/.sass-cache
 
 # Configuration
 wp-config.php
