@@ -7,6 +7,9 @@
 .primary {
   color: #97BE0D; }
 
+.secundary {
+  color: #86B100; }
+
 /*!
  * Bootstrap  v5.3.0-alpha1 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -19940,14 +19943,13 @@ input:active, input:focus, button:active, button:focus {
   .header .logo {
     position: absolute;
     top: 85px;
-    left: 9.75%;
+    left: 4px;
     font-size: 2.4rem;
     transform-origin: 0% 100%;
     transform: translateY(0px) scale(1); }
     @media screen and (max-width: 991px) {
       .header .logo {
-        top: 24px;
-        left: 6.8%; } }
+        top: 24px; } }
     .header .logo img {
       width: 210px;
       height: auto; }
@@ -19959,13 +19961,13 @@ input:active, input:focus, button:active, button:focus {
     position: absolute;
     z-index: 10;
     top: 124px;
-    right: 9.75%;
+    right: 15px;
     text-align: right;
     transform: translateY(0px); }
     @media screen and (max-width: 991px) {
       .header nav {
         right: auto;
-        left: 6.8%;
+        left: 0;
         top: 77px; } }
     .header nav li {
       line-height: 1;
@@ -20070,30 +20072,12 @@ input:active, input:focus, button:active, button:focus {
   justify-content: space-between;
   align-items: center; }
 .section .title {
-  position: relative;
+  font-family: "bookman-jf-pro", serif;
   font-size: 32px;
-  font-weight: 800;
-  padding: 0 40px;
-  padding-bottom: 30px;
-  width: auto;
-  text-align: center;
-  display: block;
-  margin: 0 auto; }
-  .section .title::before, .section .title::after {
-    content: '';
-    width: 20px;
-    height: 4px;
-    background-color: #97BE0D;
-    position: absolute;
-    top: 19px;
-    border-radius: 10px; }
-  .section .title::before {
-    left: 0; }
-  .section .title::after {
-    right: 0; }
-  @media screen and (max-width: 991px) {
-    .section .title {
-      font-size: 24px; } }
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 16px;
+  text-align: center; }
 .section .section-content {
   padding: 50px 0; }
   @media screen and (max-width: 991px) {
@@ -20167,6 +20151,67 @@ input:active, input:focus, button:active, button:focus {
     @media screen and (max-width: 991px) {
       .section .section-about .right p {
         font-size: 16px; } }
+.section .section-404 {
+  padding: 50px 0;
+  min-height: 850px;
+  padding: 32px 0;
+  overflow: hidden; }
+  @media screen and (max-width: 991px) {
+    .section .section-404 {
+      padding: 30px 0; } }
+  .section .section-404 h1, .section .section-404 .h1,
+  .section .section-404 h2,
+  .section .section-404 .h2,
+  .section .section-404 h3,
+  .section .section-404 .h3,
+  .section .section-404 h4,
+  .section .section-404 .h4,
+  .section .section-404 h5,
+  .section .section-404 .h5,
+  .section .section-404 h6,
+  .section .section-404 .h6 {
+    font-family: "bookman-jf-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 16px; }
+  .section .section-404 h1, .section .section-404 .h1 {
+    font-size: 32px; }
+  .section .section-404 h2, .section .section-404 .h2 {
+    font-size: 28px; }
+  .section .section-404 h3, .section .section-404 .h3 {
+    font-size: 24px; }
+  .section .section-404 h4, .section .section-404 .h4 {
+    font-size: 20px; }
+  .section .section-404 h5, .section .section-404 .h5 {
+    font-size: 16px; }
+  .section .section-404 h6, .section .section-404 .h6 {
+    font-size: 12px; }
+  .section .section-404 .text-center {
+    text-align: center; }
+  .section .section-404 .text-left {
+    text-align: left; }
+  .section .section-404 .text-right {
+    text-align: right; }
+  .section .section-404 .text-justify {
+    text-align: justify; }
+  .section .section-404 p {
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 20px; }
+  .section .section-404 ul {
+    margin: 20px 0;
+    list-style: disc;
+    list-style-position: inside; }
+    .section .section-404 ul li {
+      font-size: 16px;
+      margin-bottom: 0; }
+  .section .section-404 ol {
+    margin: 20px 0;
+    list-style: decimal;
+    list-style-position: inside; }
+    .section .section-404 ol li {
+      font-size: 16px;
+      margin-bottom: 0; }
 .section .section-about-service {
   padding-top: 30px;
   padding-bottom: 50px; }
@@ -20333,9 +20378,26 @@ input:active, input:focus, button:active, button:focus {
   @media screen and (max-width: 991px) {
     .single {
       margin-top: 130px; } }
+  .single .row-adjust {
+    margin: 0 -4px; }
+    .single .row-adjust .col-md-9, .single .row-adjust .col-md-3 {
+      padding: 0 4px; }
+    .single .row-adjust .col-md-12 {
+      padding: 0 4px; }
   .single .section {
     padding: 32px 0;
     overflow: hidden; }
+    .single .section .category {
+      text-align: right; }
+      .single .section .category .category-text {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 8px; }
+        .single .section .category .category-text span {
+          margin-right: 8px; }
+        .single .section .category .category-text:last-of-type {
+          margin-bottom: 0; }
     .single .section h1, .single .section .h1, .single .section h2, .single .section .h2, .single .section h3, .single .section .h3, .single .section h4, .single .section .h4, .single .section h5, .single .section .h5, .single .section h6, .single .section .h6 {
       font-family: "bookman-jf-pro", serif;
       font-weight: 400;
@@ -20363,7 +20425,7 @@ input:active, input:focus, button:active, button:focus {
       text-align: justify; }
     .single .section p {
       font-size: 16px;
-      line-height: 1.2;
+      line-height: 1.4;
       margin-bottom: 20px; }
     .single .section ul {
       margin: 20px 0;

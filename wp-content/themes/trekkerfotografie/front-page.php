@@ -28,7 +28,7 @@
                 $args = array(
                     'post_type' => 'post',
                     'status' => 'publish',
-                    'showposts' => 6,
+                    'showposts' => 12,
                     'orderby' => 'date',
                     'order' => 'DESC'
                 );
