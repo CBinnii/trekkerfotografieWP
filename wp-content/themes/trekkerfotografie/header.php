@@ -2,9 +2,28 @@
 <html lang="nl">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=ed">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title><?php echo get_the_title(); ?> - Trekkerfotografie</title>
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="Trekkerfotografie" />
+        <meta name="description" content="Voor land - en akkerbouwfoto's uit Noord Nederland" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.trekkerfotografie.nl/" />
+        <meta property="og:title" content="Trekkerfotografie" />
+        <meta property="og:description" content="Voor land - en akkerbouwfoto's uit Noord Nederland" />
+        <meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/images/meta-image.png" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.trekkerfotografie.nl/" />
+        <meta property="twitter:title" content="Trekkerfotografie" />
+        <meta property="twitter:description" content="Voor land - en akkerbouwfoto's uit Noord Nederland" />
+        <meta property="twitter:image" content="<?php echo get_stylesheet_directory_uri(); ?>/images/meta-image.png" />
+
+
         <link rel="icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.png">
         <?php wp_head(); ?>
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/style.css">
