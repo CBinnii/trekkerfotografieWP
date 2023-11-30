@@ -41,7 +41,6 @@
                 </div>
 
                 <nav class="alt-font header-transition">
-                    
                     <?php
                         wp_nav_menu(array(
                             'theme_location' => '',
@@ -53,5 +52,7 @@
                         ));
                     ?>
                 </nav>
+
+                <?php get_search_form(); ?>
             </div>
         </header>

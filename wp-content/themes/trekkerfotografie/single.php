@@ -7,8 +7,8 @@
     <section class="single">
         <div class="section">
             <div class="container">
-                <div class="row">
-                    <div class="col-12">
+                <div class="row m-0">
+                    <div class="col-12" style="padding: 0 4px;">
                         <div class="text text-justify">
                             <div class="row row-adjust mb-3">
                                 <div class="col-md-9">
@@ -39,8 +39,12 @@
                     <div class="row row-adjust m-0">
                         <?php 
                             $youtube_url = get_field('youtube_url');
-                            $youtube_thumb = get_field('youtube_thumb');
-                            if( $youtube_url ): ?>
+
+                            if( $youtube_url ): 
+                                $video_id = explode("?v=", $youtube_url);
+                                $video_id = $video_id[1];
+                                $youtube_thumb = "http://img.youtube.com/vi/".$video_id."/maxresdefault.jpg";
+                            ?>
                                 <a data-fslightbox="gallery_2" class="col-md-12" href="<?php echo $youtube_url; ?>">
                                     <div class="image video" style="background-image: url('<?php echo $youtube_thumb; ?>');"></div>
                                 </a>

@@ -97,3 +97,29 @@ var swiperClients = new Swiper(".swiper-clients", {
         },
     },
 });
+
+// Site search toggle
+const siteSearch = document.querySelector('.header-site-search')
+const siteSearchInput = document.querySelector('.header-site-search-input')
+const nav = document.querySelector('.js-nav')
+
+if (siteSearch) {
+    document.addEventListener('click', (event) => {
+        const withinBoundaries = event.composedPath().includes(siteSearch)
+
+        if (withinBoundaries) {
+            siteSearch.classList.add('active');
+
+            setTimeout(function () {
+                if (siteSearchInput) {
+                    siteSearchInput.focus();
+                }
+            }, 100);
+        } else {
+            if (!event.composedPath().includes(nav)) {
+                siteSearch.classList.remove('active');
+            }
+        }
+    })
+}
+// end Site search toggle

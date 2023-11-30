@@ -20,32 +20,7 @@
                             <div class="contact-form">
                                 <h3>Contactformulier</h3>
             
-                                <div class="wpcf7 js" id="f675-o1" lang="en-GB" dir="ltr">
-                                    <form action="#" method="post" class="form init">
-                                        <div class="row">
-                                            <div class="col-md-6 mb-3">
-                                                <input size="40" class="text form-control" id="naam" aria-invalid="false" placeholder="Naam" value="" type="text" name="naam">
-                                            </div>
-                                            <div class="col-md-6 mb-3">
-                                                <input size="40" class="tel text form-control" id="telefoonnummer" aria-invalid="false" placeholder="Telefoonnummer" value="" type="tel" name="telefoonnummer">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12 mb-3">
-                                                <input size="40" class="email text form-control" id="email" aria-invalid="false" placeholder="Email" value="" type="email" name="email">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12 mb-4">
-                                                <textarea cols="40" rows="10" class="textarea form-control" id="vraag" aria-invalid="false" placeholder="Stel hier je vraag" name="vraag"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="button">
-                                            <input class="submit has-spinner button-default primary" id="send" type="submit" value="Verstuur">
-                                        </div>
-                                        <div class="response-output" aria-hidden="true"></div>
-                                    </form>
-                                </div>
+                                <?php echo do_shortcode('[contact-form-7 id="1287daa" title="ContactForm"]') ?>
                             </div>
                         </div>
                     </div>
@@ -54,21 +29,26 @@
                         <div class="row m-0">
                             <div class="col-md-12 left">
                                 <div class="text-box">
-                                    <p>
-                                        Kan ik je helpen met foto’s? <br>
-                                        Bel, mail of stuur me een whatsapp-bericht
-                                    </p>
-    
+                                    <?php if( !empty($about_text) ): ?>
+                                        <?php echo $about_text ?>
+                                    <?php endif; ?>
+
                                     <div class="button">
-                                        <a href="#" target="_blank" class="button-default btn-default-rounded">
-                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/envelope.svg" alt="Email Icon">
-                                        </a>
-                                        <a href="#" target="_blank" class="button-default btn-default-rounded">
-                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/phone-alt.svg" alt="Phone Icon">
-                                        </a>
-                                        <a href="#" target="_blank" class="button-default btn-default-rounded">
-                                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/whatsapp.svg" alt="Whatsapp Icon">
-                                        </a>
+                                        <?php if( !empty($email) ): ?>
+                                            <a href="<?php echo $email; ?>" target="_blank" class="button-default btn-default-rounded">
+                                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/envelope.svg" alt="Email Icon">
+                                            </a>
+                                        <?php endif; ?>
+                                        <?php if( !empty($phone) ): ?>
+                                            <a href="<?php echo $phone; ?>" target="_blank" class="button-default btn-default-rounded">
+                                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/phone-alt.svg" alt="Phone Icon">
+                                            </a>
+                                        <?php endif; ?>
+                                        <?php if( !empty($whatsapp) ): ?>
+                                            <a href="<?php echo $whatsapp; ?>" target="_blank" class="button-default btn-default-rounded">
+                                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icons/whatsapp.svg" alt="Whatsapp Icon">
+                                            </a>
+                                        <?php endif; ?>
                                     </div>
                                 </div>
                             </div>
