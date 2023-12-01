@@ -26,7 +26,7 @@
 
         <link rel="icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.png">
         <?php wp_head(); ?>
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/style.css">
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/style.css?v=1.2">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" href="https://use.typekit.net/lgk7qgt.css">
     </head>

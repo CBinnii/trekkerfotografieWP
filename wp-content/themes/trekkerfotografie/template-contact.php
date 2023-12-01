@@ -19,12 +19,19 @@
                         <div class="col-12 col-md-6">
                             <div class="contact-form">
                                 <h3>Contactformulier</h3>
-            
-                                <?php echo do_shortcode('[contact-form-7 id="1287daa" title="ContactForm"]') ?>
+
+                                <?php //echo do_shortcode('[contact-form-7 id="1287daa" title="ContactForm"]') ?>
+                                <?php echo do_shortcode('[contact-form-7 id="76818d6" title="ContactForm"]') ?>
                             </div>
                         </div>
                     </div>
     
+                    <?php 
+                        $about_text = get_field('about_text', 'option');
+                        $whatsapp = get_field('whatsapp', 'option');
+                        $phone = get_field('phone', 'option');
+                        $email = get_field('email', 'option');
+                    ?>
                     <div class="section-about">
                         <div class="row m-0">
                             <div class="col-md-12 left">

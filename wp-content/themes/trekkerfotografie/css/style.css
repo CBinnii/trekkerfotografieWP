@@ -20341,11 +20341,17 @@ input:active, input:focus, button:active, button:focus {
     justify-content: space-between;
     align-items: center; }
   .section .section-services .swiper-slide {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 400px;
     margin-bottom: 60px; }
+    @media screen and (max-width: 991px) {
+      .section .section-services .swiper-slide {
+        height: 300px;
+        margin-bottom: 16px; } }
+    .section .section-services .swiper-slide .image-background {
+      background-position: bottom left;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: calc(100% - 80px); }
     .section .section-services .swiper-slide .content-text {
       background-color: #FFFFFF;
       width: 100%;
@@ -20355,7 +20361,8 @@ input:active, input:focus, button:active, button:focus {
       left: 0;
       z-index: 90;
       padding: 15px 18px;
-      min-height: 74px; }
+      min-height: 74px;
+      max-height: 80px; }
       .section .section-services .swiper-slide .content-text .text-title {
         color: #212121;
         font-size: 20px;
@@ -20517,13 +20524,14 @@ input:active, input:focus, button:active, button:focus {
 .gallery .col-md-6 {
   padding: 0 4px; }
 .gallery .image {
-  background-position: center;
+  background-position: bottom left;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 350px;
   margin-bottom: 8px; }
   .gallery .image.video {
+    background-position: center;
     position: relative;
     display: flex;
     justify-content: center;

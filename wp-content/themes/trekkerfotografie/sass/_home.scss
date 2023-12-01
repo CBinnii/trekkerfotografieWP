@@ -321,11 +321,20 @@
         }
 
         .swiper-slide {
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
             height: 400px;
             margin-bottom: 60px;
+
+            @media screen and (max-width: 991px) {
+                height: 300px;
+                margin-bottom: 16px;
+            }
+
+            .image-background {
+                background-position: bottom left;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: calc(100% - 80px);
+            }
 
             .content-text {
                 background-color: $white;
@@ -337,6 +346,7 @@
                 z-index: 90;
                 padding: 15px 18px;
                 min-height: 74px;
+                max-height: 80px;
 
                 .text-title {
                     color: $gray-1;
