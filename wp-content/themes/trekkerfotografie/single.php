@@ -39,23 +39,18 @@
                     <div class="row row-adjust m-0">
                         <?php 
                             $youtube_url = get_field('youtube_url');
-
-                            if( $youtube_url ): 
-                                $video_id = explode("?v=", trim($youtube_url, " "));
+                            $youtube_thumb = get_field('youtube_thumb');
+                            
+                            if( $youtube_url && empty($youtube_thumb)) {
+                                $video_id = explode("https://youtu.be/", trim($youtube_url, " "));
                                 $video_id = $video_id[1];
 
-                                if (empty($video_id)) {
-                                    $video_id = explode("https://youtu.be/", trim($youtube_url, " "));
-                                    $video_id = trim($video_id[1], " ");
-                                }
-
                                 $youtube_thumb = "http://img.youtube.com/vi/".$video_id."/hqdefault.jpg";
-                            ?>
-                                <a data-fslightbox="gallery_2" class="col-md-12" href="<?php echo $youtube_url; ?>">
-                                    <div class="image video" style="background-image: url('<?php echo $youtube_thumb; ?>');"></div>
-                                </a>
-                            <?php endif; 
+                            }
                         ?>
+                            <a data-fslightbox="gallery_2" class="col-md-12" href="<?php echo $youtube_url; ?>">
+                                <div class="image video" style="background-image: url('<?php echo $youtube_thumb; ?>');"></div>
+                            </a>
 
                         <?php 
                             $images = get_field('images');

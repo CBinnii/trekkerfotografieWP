@@ -20530,6 +20530,9 @@ input:active, input:focus, button:active, button:focus {
   width: 100%;
   height: 350px;
   margin-bottom: 8px; }
+  @media screen and (max-width: 991px) {
+    .gallery .image {
+      height: 250px; } }
   .gallery .image.video {
     background-position: center;
     position: relative;
@@ -20537,6 +20540,9 @@ input:active, input:focus, button:active, button:focus {
     justify-content: center;
     align-items: center;
     height: 700px; }
+    @media screen and (max-width: 991px) {
+      .gallery .image.video {
+        height: 250px; } }
     .gallery .image.video:before {
       content: "";
       width: 0;
