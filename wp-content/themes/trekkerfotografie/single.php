@@ -47,12 +47,14 @@
 
                                 $youtube_thumb = "http://img.youtube.com/vi/".$video_id."/hqdefault.jpg";
                             }
+
+                            if( !empty($youtube_url) && !empty($youtube_thumb)) {
                         ?>
                             <a data-fslightbox="gallery_2" class="col-md-12" href="<?php echo $youtube_url; ?>">
                                 <div class="image video" style="background-image: url('<?php echo $youtube_thumb; ?>');"></div>
                             </a>
-
                         <?php 
+                            }
                             $images = get_field('images');
                             if( $images ):
                                 foreach( $images as $image_id ): ?>
